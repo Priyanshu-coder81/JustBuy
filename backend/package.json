@@ -1,0 +1,16 @@
+{
+  "name": "justbuy",
+  "version": "1.0.0",
+  "description": "A backend application for handling utensils website",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "author": "Priyanshu Verma",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.14",
+    "prettier": "^3.8.1"
+  }
+}
