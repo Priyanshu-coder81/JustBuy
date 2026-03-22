@@ -7,6 +7,11 @@ const notificationSchema = new Schema({
         type:String,
         required:true,
     },
+    type:{
+        type:String,
+        enum:["product","order"],
+        required:true,
+    },
     message:{
         type:String,
         required:true,
@@ -15,11 +20,11 @@ const notificationSchema = new Schema({
         type:Schema.Types.ObjectId,
         ref:"Product",
     },
-   /*  orderId:{
+    orderId:{
         type:Schema.Types.ObjectId,
         ref:"Order",
     },
-    */
+    
 },{timestamps:true});
 
 const Notification = mongoose.model("Notification", notificationSchema);
